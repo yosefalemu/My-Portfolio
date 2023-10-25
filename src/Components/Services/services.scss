@@ -1,0 +1,117 @@
+.services {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .wrapper {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    .header {
+      height: 300px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      .title {
+        text-align: center;
+        font-size: 52px;
+      }
+      .underline {
+        width: 150px;
+        height: 5px;
+        background-color: #20c997;
+        position: absolute;
+        top: 63%;
+        left: 50%;
+        border-radius: 15px;
+        transform: translateX(-50%);
+      }
+    }
+
+    .items-container {
+      height: calc(100% - 350px);
+      width: 100%;
+      gap: 1%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .item {
+        width: 33.33333%;
+        height: 100%;
+        background-color: #ffffff17;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 20px;
+
+        .item-wrapper {
+          padding: 30px;
+          background-color: #ffffff0d;
+          width: 100%;
+          height: 100%;
+          border-radius: 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          cursor: pointer;
+          &:hover {
+            background-color: #ffffff05;
+          }
+
+          .item-header {
+            position: relative;
+            .item-title {
+              width: 100%;
+              text-align: center;
+              font-size: 24px;
+              font-weight: 800;
+            }
+            .item-underline {
+              width: 70px;
+              height: 5px;
+              background-color: #20c997;
+              position: absolute;
+              top: 120%;
+              left: 50%;
+              border-radius: 15px;
+              transform: translateX(-50%);
+            }
+          }
+          .item-text {
+            padding: 20px;
+            font-size: 20px;
+            text-align: left;
+          }
+
+          .starting-time {
+            font-size: 20px;
+            span {
+              font-weight: 900;
+              font-size: 24px;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+  .over-lay {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    color: #ffffff17;
+    font-size: 150px;
+    text-align: center;
+    padding: 45px 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
