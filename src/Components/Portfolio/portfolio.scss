@@ -1,0 +1,98 @@
+.portfolio {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  .header {
+    position: absolute;
+    top: 50px;
+    .title {
+      font-size: 38px;
+    }
+    .underline {
+      width: 150px;
+      height: 5px;
+      background-color: #20c997;
+      position: absolute;
+      top: 45px;
+      left: 50%;
+      border-radius: 15px;
+      transform: translateX(-50%);
+    }
+  }
+  .slider {
+    height: 450px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-out;
+    .sliderContainer {
+      width: 100vw;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .item {
+        margin: auto;
+        width: 60%;
+        height: 100%;
+        background-color: rgb(35, 35, 116);
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        .itemLeft {
+          flex: 1;
+          padding: 70px 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          .linkContainer {
+            display: flex;
+            gap: 30px;
+            .link {
+              color: gray;
+              text-decoration: underline;
+            }
+          }
+        }
+        .itemRight {
+          flex: 2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+  .leftArrow {
+    position: absolute;
+    left: 50px;
+    cursor: pointer;
+  }
+  .rightArrow {
+    position: absolute;
+    right: 70px;
+    cursor: pointer;
+  }
+  .over-lay {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    color: #ffffff17;
+    font-size: 100px;
+    text-align: center;
+    padding: 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
